@@ -1004,6 +1004,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
 
 PRODUCT_PACKAGES += \
+    libantradio \
     libplatformconfig \
     libsdm-disp-vndapis \
     libsdm-disp-apis.qti \
