@@ -155,6 +155,16 @@ dex_import {
 }
 
 android_app_import {
+	name: "NfcFn",
+	owner: "samsung",
+	apk: "proprietary/app/NfcFn/NfcFn.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "BiometricSetting",
 	owner: "samsung",
 	apk: "proprietary/priv-app/BiometricSetting/BiometricSetting.apk",

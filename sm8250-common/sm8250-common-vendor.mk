@@ -717,11 +717,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/etc/felica_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/felica_access.xml \
     vendor/samsung/sm8250-common/proprietary/etc/nfc_key:$(TARGET_COPY_OUT_SYSTEM)/etc/nfc_key \
     vendor/samsung/sm8250-common/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
+    vendor/samsung/sm8250-common/proprietary/etc/permissions/com.publicnfc.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.publicnfc.xml \
+    vendor/samsung/sm8250-common/proprietary/framework/com.publicnfc.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.publicnfc.jar \
+    vendor/samsung/sm8250-common/proprietary/lib64/libnfc-fn.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc-fn.so \
+    vendor/samsung/sm8250-common/proprietary/lib64/libnfc_fn_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_fn_jni.so \
     vendor/samsung/sm8250-common/proprietary/vendor/bin/hw/sec.android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sec.android.hardware.nfc@1.2-service \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/sec.android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec.android.hardware.nfc@1.2-service.rc \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/sec_senn82ab_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/sec_senn82ab_rfreg.bin \
-    vendor/samsung/sm8250-common/proprietary/vendor/firmware/sec_senn82ab_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_senn82ab_firmware.bin
+    vendor/samsung/sm8250-common/proprietary/vendor/firmware/sec_senn82ab_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sec_senn82ab_firmware.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/nfc_nci_fn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_fn.so
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -1012,5 +1018,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.capabilityconfigstore-V1.0-java \
+    NfcFn \
     BiometricSetting \
     TimeService
