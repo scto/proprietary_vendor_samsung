@@ -1010,12 +1010,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     libfastcvopt \
-    libplatformconfig \
     libsdm-disp-vndapis \
     libsdm-disp-apis.qti \
     libskeymaster4device \
     libthermalclient \
-    vendor.qti.hardware.capabilityconfigstore@1.0 \
     vendor.qti.hardware.capabilityconfigstore-V1.0-java \
     NfcFn \
     BiometricSetting \
