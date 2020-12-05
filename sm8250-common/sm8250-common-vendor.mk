@@ -982,7 +982,9 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
-    vendor/samsung/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/hw/thermal.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.kona.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/hw/thermal.kona.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.kona.so
 
 # Time services
 PRODUCT_COPY_FILES += \
