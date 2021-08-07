@@ -1383,6 +1383,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libfastcvopt \
     libsdm-disp-apis.qti \
+    libril \
     libsdm-disp-vndapis \
     libthermalclient \
     BiometricSetting \
