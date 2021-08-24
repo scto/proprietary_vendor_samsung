@@ -117,6 +117,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "imsservice",
+	owner: "samsung",
+	apk: "proprietary/system/priv-app/imsservice/imsservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "com.qualcomm.qti.gpudrivers.kona.api30",
 	owner: "samsung",
 	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk",
