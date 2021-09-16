@@ -52,6 +52,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 
+# ARGOS
+PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/vendor/bin/argosd:$(TARGET_COPY_OUT_VENDOR)/bin/argosd
+
 # Audio
 PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/lib/libcodecsolutionhelper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcodecsolutionhelper.so \
@@ -297,6 +301,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libtriplecam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_image_optical_zoom.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap@1.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap@1.1.so
@@ -926,6 +931,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/libstagefright_bufferqueue_helper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferqueue_helper_vendor.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_vendor.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libstagefright_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ac4dec.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_ddpdec.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libstagefright_soft_qtiflacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_soft_qtiflacdec.so \
@@ -1129,20 +1136,28 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/system/bin/at_distributor:$(TARGET_COPY_OUT_SYSTEM)/bin/at_distributor \
     vendor/samsung/sm8250-common/proprietary/system/bin/connfwexe:$(TARGET_COPY_OUT_SYSTEM)/bin/connfwexe \
     vendor/samsung/sm8250-common/proprietary/system/bin/ddexe:$(TARGET_COPY_OUT_SYSTEM)/bin/ddexe \
+    vendor/samsung/sm8250-common/proprietary/system/bin/sec_diag_uart_log:$(TARGET_COPY_OUT_SYSTEM)/bin/sec_diag_uart_log \
     vendor/samsung/sm8250-common/proprietary/system/bin/smdexe:$(TARGET_COPY_OUT_SYSTEM)/bin/smdexe \
     vendor/samsung/sm8250-common/proprietary/system/etc/init/init.rilchip.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.rilchip.rc \
     vendor/samsung/sm8250-common/proprietary/system/etc/init/init.rilcommon.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.rilcommon.rc \
     vendor/samsung/sm8250-common/proprietary/system/etc/init/init.rilepdg.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.rilepdg.rc \
     vendor/samsung/sm8250-common/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/samsung/sm8250-common/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libatparser.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libatparser.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libfactoryutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfactoryutil.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfloatingfeature.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libmdf.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdf.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libomission_avoidance.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libomission_avoidance.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libpacm_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpacm_client.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libatparser.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libatparser.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libfactoryutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfactoryutil.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfloatingfeature.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libmdf.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdf.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libomission_avoidance.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libomission_avoidance.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libpacm_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpacm_client.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.radio.bridge@2.0.so \
@@ -1236,11 +1251,27 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/samsung/sm8250-common/proprietary/system/bin/imsd:$(TARGET_COPY_OUT_SYSTEM)/bin/imsd \
     vendor/samsung/sm8250-common/proprietary/system/etc/init/imsd.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/imsd.rc \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/epdgmanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/epdgmanager_library.xml \
     vendor/samsung/sm8250-common/proprietary/system/etc/permissions/imsmanager_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/imsmanager_library.xml \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/org.simalliance.openmobileapi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.simalliance.openmobileapi.xml \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/privapp-permissions-com.sec.epdg.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.sec.epdg.xml \
     vendor/samsung/sm8250-common/proprietary/system/etc/permissions/privapp-permissions-com.sec.imslogger.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.sec.imslogger.xml \
     vendor/samsung/sm8250-common/proprietary/system/etc/permissions/privapp_whitelist_com.sec.imsservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_whitelist_com.sec.imsservice.xml \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/rcsopenapi_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/rcsopenapi_library.xml \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/semextendedformat.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/semextendedformat.xml \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/semmediatranscoder.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/semmediatranscoder.xml \
     vendor/samsung/sm8250-common/proprietary/system/etc/permissions/vsimservice_library.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vsimservice_library.xml \
-    vendor/samsung/sm8250-common/proprietary/system/framework/imsmanager.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/imsmanager.jar \
+    vendor/samsung/sm8250-common/proprietary/system/etc/epdg_apns_conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/epdg_apns_conf.xml \
+    vendor/samsung/sm8250-common/proprietary/system/etc/mapconprovider.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/mapconprovider.xml \
+    vendor/samsung/sm8250-common/proprietary/system/framework/EpdgManager.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/EpdgManager.jar \
+    vendor/samsung/sm8250-common/proprietary/system/framework/org.simalliance.openmobileapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/org.simalliance.openmobileapi.jar \
+    vendor/samsung/sm8250-common/proprietary/system/framework/rcsopenapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/rcsopenapi.jar \
+    vendor/samsung/sm8250-common/proprietary/system/framework/semextendedformat.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/semextendedformat.jar \
+    vendor/samsung/sm8250-common/proprietary/system/framework/semmediatranscoder.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/semmediatranscoder.jar \
+    vendor/samsung/sm8250-common/proprietary/system/framework/semwifi-service.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/semwifi-service.jar \
+    vendor/samsung/sm8250-common/proprietary/system/framework/vsimmanager.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vsimmanager.jar \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libaresdns.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaresdns.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libcurl2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcurl2.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libresampler_ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libresampler_ims.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsec-ims.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsec-ims.so \
     vendor/samsung/sm8250-common/proprietary/system/priv-app/imsservice/lib/arm64/libsec-ims.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/imsservice/lib/arm64/libsec-ims.so \
@@ -1417,6 +1448,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
+# Vaultkeeper
+PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/system/bin/scs:$(TARGET_COPY_OUT_SYSTEM)/bin/scs \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libvkmanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvkmanager.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/vendor.samsung.hardware.security.vaultkeeper@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.security.vaultkeeper@2.0.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libvkmanager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvkmanager.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/bin/vaultkeeperd:$(TARGET_COPY_OUT_VENDOR)/bin/vaultkeeperd \
+    vendor/samsung/sm8250-common/proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
+
 # Vibrator
 PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/lib/vendor.samsung.hardware.vibrator-V1-cpp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.vibrator-V1-cpp.so \
@@ -1435,6 +1476,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/sm8250-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.wifi@2.0-service \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so \
@@ -1450,12 +1492,19 @@ PRODUCT_PACKAGES += \
     libril \
     libsdm-disp-vndapis \
     libthermalclient \
+    MdecService \
+    SimMobilityKit \
     BiometricSetting \
+    EpdgService \
+    ImsLogger \
     imsservice \
+    SecTelephonyProvider \
     com.qualcomm.qti.gpudrivers.kona.api30 \
     TimeService \
     HotwordEnrollmentOKGoogleEx2HEXAGON \
     HotwordEnrollmentXGoogleEx2HEXAGON \
+    framework-samsung \
+    imsmanager \
     com.android.hotwordenrollment.common.util \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
