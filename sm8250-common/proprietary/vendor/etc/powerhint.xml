@@ -237,11 +237,11 @@
         <!-- POWER_HINT_ID_LIVE_FOCUS -->
         <!-- silver cluster min freq : MPCTLV3_MIN_FREQ_CLUSTER_LITTLE_CORE_0(0x40800100) : 1248 -->
         <!-- gold cluster min freq   : MPCTLV3_MIN_FREQ_CLUSTER_BIG_CORE_0(0x40800000)    : 1056 -->
-        <!-- Sched downmigrate       : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)              : 40   -->
-        <!-- Sched upmigrate         : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                : 50   -->
+        <!-- Sched downmigrate       : MPCTLV3_SCHED_DOWNMIGRATE(0x40C20000)              : 30   -->
+        <!-- Sched upmigrate         : MPCTLV3_SCHED_UPMIGRATE(0x40C1C000)                : 40   -->
         <Config
             Id="0x00001346" Enable="true" Timeout="0" Target="kona"
-            Resources="0x40800100, 1248, 0x40800000, 1056, 0x40C20000, 40, 0x40C1C000, 50"/>
+            Resources="0x40800100, 1248, 0x40800000, 1056, 0x40C20000, 30, 0x40C1C000, 40"/>
 
     </Powerhint>
 </HintConfigs>

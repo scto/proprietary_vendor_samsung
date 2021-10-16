@@ -9,14 +9,22 @@ on boot
 
     #Assign TCP buffer thresholds to be ceiling value of technology maximums
     #Increased technology maximums should be reflected here.
-    write /proc/sys/net/core/rmem_max  16777216
-    write /proc/sys/net/core/wmem_max  8388608
+    write /proc/sys/net/core/rmem_max  33554432
+    write /proc/sys/net/core/wmem_max  16777216
 
     #Load rmnet_core driver
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_ctl
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules rmnet_core
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_ctl
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules/5.4-gki rmnet_core
+
+on boot
+    #Reduce the pressure on the reassemly cache by discarding orphan fragments quicker
+    write /proc/sys/net/netfilter/nf_conntrack_frag6_timeout 10
+    
+on boot && property:ro.csc.countryiso_code=BR
+    #Reduce the pressure on the reassemly cache by discarding orphan fragments quicker
+    write /proc/sys/net/netfilter/nf_conntrack_frag6_timeout 60
 
 # msm specific files that need to be created on /data
 on post-fs-data

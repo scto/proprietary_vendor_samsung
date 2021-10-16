@@ -238,8 +238,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.1.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.samsung.hardware.snap@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.snap@1.2.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/hw/camera.unihal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.unihal.default.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
@@ -303,8 +305,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap@1.0.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap@1.1.so
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap@1.1.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap@1.2.so
 
 # Camera firmware
 PRODUCT_COPY_FILES += \
@@ -312,17 +316,23 @@ PRODUCT_COPY_FILES += \
 
 # Samsung camera
 PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libAiSolution_wrapper_v1.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAiSolution_wrapper_v1.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libAIHdr_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAIHdr_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libAIQSolution_MPI.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libAIQSolution_MPI.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libBeauty_v4.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libBestPhoto.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libBestPhoto.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libBright_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libBright_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libDLInterface_hidl.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libDLInterface_hidl.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libDeblur_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libDeblur_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libDocRectifyWrapper.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libDocRectifyWrapper.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libEventDetector.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libEventDetector.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libEventFinder.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libEventFinder.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFaceBlurDetection.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFaceBlurDetection.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFacePreProcessing.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFacePreProcessing_jni.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFacePreProcessing_jni.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libFaceRestoration.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFaceRestoration.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFace_Landmark_API.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libFace_Landmark_Engine.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFace_Landmark_Engine.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFacialBasedSelfieCorrection.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFacialBasedSelfieCorrection.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFood.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFood.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libFoodDetector.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFoodDetector.camera.samsung.so \
@@ -357,14 +367,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/lib/libSwIsp_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libSwIsp_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libSwIsp_wrapper_v1.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libSwIsp_wrapper_v1.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libUltraWideDistortionCorrection.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libUltraWideDistortionCorrection.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libVideoClassifier.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libVideoClassifier.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libcolor_engine.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcolor_engine.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libcore2nativeutil.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcore2nativeutil.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libexifa.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libexifa.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libhumantracking_util.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libhumantracking_util.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libjpega.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libjpega.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libmidas_DNNInterface.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmidas_DNNInterface.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libmidas_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmidas_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libmOCR.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmOCR.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libphotoeditorEngine.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libphotoeditorEngine.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsaiv_HprFace_api.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsaiv_HprFace_api.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsaiv_HprFace_cmh_support_jni.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsaiv_HprFace_cmh_support_jni.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libsecairevital.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecairevital.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsecimaging.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecimaging.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsecimaging_pdk.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecimaging_pdk.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsecjpeginterface.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecjpeginterface.camera.samsung.so \
@@ -374,20 +389,30 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsuperresolution_wrapper_v2.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsuperresolution_wrapper_v2.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libsurfaceutil.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsurfaceutil.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libtensorflowLite.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtensorflowLite.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libtensorflowLite.dynamic_viewing.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtensorflowLite.dynamic_viewing.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libtensorflowlite_c.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtensorflowlite_c.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/libtensorflowlite_inference_api.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtensorflowlite_inference_api.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib/libtflite2.myfilters.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libtflite2.myfilters.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/vendor.samsung.hardware.camera.device@5.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.camera.device@5.0.so \
     vendor/samsung/sm8250-common/proprietary/system/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libAiSolution_wrapper_v1.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libAiSolution_wrapper_v1.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libAIHdr_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libAIHdr_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libAIQSolution_MPI.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libAIQSolution_MPI.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libBeauty_v4.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libBestComposition.polarr.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libBestComposition.polarr.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libBestPhoto.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libBestPhoto.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libBright_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libBright_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libDLInterface_hidl.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDLInterface_hidl.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libDeblur_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDeblur_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libDocRectifyWrapper.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libDocRectifyWrapper.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libEventDetector.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libEventDetector.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libEventFinder.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libEventFinder.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFaceBlurDetection.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFaceBlurDetection.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFacePreProcessing.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFacePreProcessing.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFacePreProcessing_jni.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFacePreProcessing_jni.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libFaceRestoration.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFaceRestoration.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFace_Landmark_API.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libFace_Landmark_Engine.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFace_Landmark_Engine.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFacialBasedSelfieCorrection.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFacialBasedSelfieCorrection.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFood.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFood.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libFoodDetector.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFoodDetector.camera.samsung.so \
@@ -422,14 +447,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libSwIsp_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libSwIsp_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libSwIsp_wrapper_v1.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libSwIsp_wrapper_v1.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libUltraWideDistortionCorrection.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libUltraWideDistortionCorrection.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libVideoClassifier.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libVideoClassifier.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libcolor_engine.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcolor_engine.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libcore2nativeutil.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcore2nativeutil.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libexifa.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libexifa.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libhumantracking_util.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhumantracking_util.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libjpega.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjpega.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libmidas_DNNInterface.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmidas_DNNInterface.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libmidas_core.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmidas_core.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libmOCR.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmOCR.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libphotoeditorEngine.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libphotoeditorEngine.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsaiv_HprFace_api.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsaiv_HprFace_api.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsaiv_HprFace_cmh_support_jni.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsaiv_HprFace_cmh_support_jni.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libsecairevital.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecairevital.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsecimaging.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecimaging.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsecimaging_pdk.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecimaging_pdk.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsecjpeginterface.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecjpeginterface.camera.samsung.so \
@@ -439,7 +469,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsuperresolution_wrapper_v2.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsuperresolution_wrapper_v2.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libsurfaceutil.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsurfaceutil.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libtensorflowLite.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtensorflowLite.camera.samsung.so \
-    vendor/samsung/sm8250-common/proprietary/system/lib64/libtensorflowlite_inference_api.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtensorflowlite_inference_api.camera.samsung.so
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libtensorflowLite.dynamic_viewing.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtensorflowLite.dynamic_viewing.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libtensorflowlite_c.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtensorflowlite_c.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libtensorflowlite_inference_api.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtensorflowlite_inference_api.camera.samsung.so \
+    vendor/samsung/sm8250-common/proprietary/system/lib64/libtflite2.myfilters.camera.samsung.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libtflite2.myfilters.camera.samsung.so
 
 # Charger
 PRODUCT_COPY_FILES += \
@@ -1001,8 +1034,10 @@ PRODUCT_COPY_FILES += \
 # PASR HAL
 PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.memory.pasrmanager@1.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.qti.memory.pasrmanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.memory.pasrmanager@1.1.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.power.pasrmanager@1.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager@1.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.memory.pasrmanager@1.1.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.qti.power.pasrmanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Perf
@@ -1335,7 +1370,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.sysinput@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.sysinput@1.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.miscpower@2.0.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.sysinput@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.sysinput@1.0.so
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.sysinput@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.sysinput@1.0.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.sysinput@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.sysinput@1.1.so
 
 # Seccam
 PRODUCT_COPY_FILES += \
@@ -1432,6 +1468,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.thermal@1.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Time services
@@ -1470,7 +1507,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.vibrator@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.vibrator@2.1-service \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator@2.1-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.vibrator@2.0.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.vibrator@2.1.so
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.vibrator@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.vibrator@2.1.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.vibrator@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.vibrator@2.2.so
 
 # WFD
 PRODUCT_COPY_FILES += \
